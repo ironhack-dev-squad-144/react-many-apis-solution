@@ -1,16 +1,20 @@
 {
-  "todos":[
-     {
-        "id":1,
-        "item":"Buy Apples"
-     },
-     {
-        "id":2,
-        "item":"Buy carrots"
-     },
-     {
-        "id":3,
-        "name":"Finish the Lab React Training"
-     }
+  "todos": [
+    {
+      "id": 1,
+      "item": "Buy Apples"
+    },
+    {
+      "id": 2,
+      "item": "Buy carrots"
+    },
+    {
+      "item": "Buy beers",
+      "id": 5
+    },
+    {
+      "item": "Buy Chartreuse",
+      "id": 7
+    }
   ]
 }
