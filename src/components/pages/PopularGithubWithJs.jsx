@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Table, Input, Label } from "reactstrap";
+import { Table } from "reactstrap";
 import axios from "axios";
 
 export default function PopularGithub() {
@@ -37,18 +37,7 @@ export default function PopularGithub() {
 
   return (
     <div>
-      <h1>Popular on GitHub</h1>
-
-      <div className="my-5">
-        <Label>Select a language</Label>
-        <Input type="select" name="language">
-          <option value="css">CSS</option>
-          <option value="html">HTML</option>
-          <option value="javascript">JavaScript</option>
-          <option value="python">Python</option>
-          <option value="ruby">Ruby</option>
-        </Input>
-      </div>
+      <h1>Popular on GitHub with JavaScript</h1>
 
       <Table>
         <thead>

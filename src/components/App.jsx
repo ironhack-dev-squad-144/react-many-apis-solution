@@ -2,6 +2,7 @@ import React from 'react';
 import MainNavbar from './MainNavbar'
 import Home from './pages/Home';
 import PopularGithub from './pages/PopularGithub';
+import PopularGithubWithJs from './pages/PopularGithubWithJs';
 import {
   Container
 } from "reactstrap";
@@ -16,6 +17,7 @@ function App() {
         <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/popular-github" component={PopularGithub} />
+        <Route path="/popular-github-with-javascript" component={PopularGithubWithJs} />
         <Route path="/crud-todos" component={CrudTodos} />
         <Route render={() => <h1>404</h1>} />
         </Switch>
