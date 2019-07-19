@@ -8,20 +8,23 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import { NavLink as NLink } from 'react-router-dom'
+
 
 export default function MainNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Navbar color="primary" dark expand="sm" className="mb-4">
-      <NavbarBrand href="/">React Many APIs</NavbarBrand>
+      <NavbarBrand tag={NLink} to="/">React Many APIs</NavbarBrand>
       <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink href="/popular-github">Popular on GitHub</NavLink>
+            {/* The Reactstrap NavLink renders the content with the component NLink */}
+            <NavLink tag={NLink} to="/popular-github">Popular on GitHub</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/crud-todos">CRUD TODOs</NavLink>
+            <NavLink tag={NLink} to="/crud-todos">CRUD TODOs</NavLink>
           </NavItem>
         </Nav>
       </Collapse>
